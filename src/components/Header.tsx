@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu as MenuIcon, X } from 'lucide-react';
@@ -10,6 +9,7 @@ const navLinks = [
   { name: 'Menu', path: '/menu' },
   { name: 'The Chef', path: '/about' },
   { name: 'Find Us', path: '/location' },
+  { name: 'Reviews', path: '/reviews' },
 ];
 
 const Header = () => {
