@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import WaveDivider from '@/components/WaveDivider';
@@ -67,9 +66,14 @@ const Index = () => {
         <div className="container mx-auto px-6 py-20 md:py-32 text-center">
           <h2 className="text-4xl md:text-6xl text-brand-background">Got Cravings?</h2>
           <p className="mt-4 text-xl md:text-2xl max-w-3xl mx-auto">We've got the kitchen firing all day. Come find us in Kilburn or get it delivered to your door.</p>
-           <Button asChild size="lg" className="mt-8 bg-brand-background hover:bg-gray-800 text-brand-white font-bold rounded-sm text-lg px-8 py-6">
-              <Link to="/location">Find Us</Link>
+           <div className="mt-8 flex justify-center space-x-4">
+            <Button asChild size="lg" className="bg-brand-background hover:bg-gray-800 text-brand-white font-bold rounded-sm text-lg px-8 py-6">
+                <Link to="/location">Find Us</Link>
             </Button>
+            <Button asChild size="lg" className="bg-brand-background hover:bg-gray-800 text-brand-white font-bold rounded-sm text-lg px-8 py-6">
+                <a href="https://deliveroo.co.uk/menu/london/brondesbury/chicknsours-at-brondes-age?srsltid=AfmBOoo0robcMapLGQTLlkIjw03jvqZ5iBreK3Rb8TnVJDfdRZ10t3kW" target="_blank" rel="noopener noreferrer">Order on Deliveroo</a>
+            </Button>
+           </div>
         </div>
          <div className="absolute bottom-0 left-0 w-full">
             <WaveDivider color="#0A192F" />
